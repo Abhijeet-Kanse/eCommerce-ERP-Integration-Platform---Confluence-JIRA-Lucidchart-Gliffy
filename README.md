@@ -116,37 +116,60 @@ US-3: Sales Manager approval for orders above threshold
 US-4: Monthly Top 10 product report
 
 US-5: Maintain logs of sync activities & errors
---- 
+
+---
 
 ## Traceability Matrix
 -- User Story	Business Requirement	Test Case
-US-1	BR-1, BR-3	TC-US1-01
-US-2	BR-5	TC-US2-01
-US-3	BR-7, BR-8, BR-9, BR-10	TC-US3-01
-US-4	BR-6	TC-US4-01
-US-5	BR-11	TC-US5-01
+
+-- US-1	BR-1, BR-3	TC-US1-01
+
+-- US-2	BR-5	TC-US2-01
+   
+-- US-3	BR-7, BR-8, BR-9, BR-10	TC-US3-01
+
+-- US-4	BR-6	TC-US4-01
+
+-- US-5	BR-11	TC-US5-01
 
 ---
 
 ## Data Mapping (Summary)
+
 ## Order Mapping
+
 -- eCommerce Field	ERP Field	Transformation
+
 -- order_id	ExternalOrderID	“WEB-” + order_id
+
 -- order_date	OrderDate	Convert to ERP timezone
+
 -- customer_email	CustomerEmail	Direct mapping
+
 -- grand_total	TotalAmount	Direct mapping
+
 -- sku	ItemCode	Direct mapping
+
 -- price	BasePrice	Round to 2 decimals
+
 -- status	IsActive	True=active, False=disabled
 
 ## Product Mapping
+
 -- ERP Field	eCommerce Field	Rule
+
 -- ItemCode	sku	Direct
+
 -- ItemName	name	Trim 255 chars
+
 -- Description	description	Convert HTML → text
+
 -- BasePrice	price	Decimal(10,2)
+
 -- Weight	weight	Convert to kg
+
 -- IsActive	status	active/disabled
+
 -- High-Value Order Workflow
 
 ## eCommerce receives order
@@ -259,7 +282,7 @@ US-5	BR-11	TC-US5-01
 
 -- System supports 100 concurrent users
 
-References
+## References
 
 ## Business Requirements Document (BRD)
 
