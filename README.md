@@ -9,8 +9,6 @@ Overview
 The eCommerce & ERP Integration Platform enables seamless, automated, and bidirectional data synchronization between an eCommerce application and an ERP system.
 The integration reduces manual effort, minimizes errors, and improves operational visibility by synchronizing Products, Customers, Orders, Inventory, Pricing, and Reporting data between both systems.
 
-This README summarizes the scope, features, architecture, requirements, and repository structure of the project.
-
 ## Business Objectives
 
 -- Automate sync of Products, Customers, Orders, and Inventory
